@@ -1,11 +1,11 @@
 server:
-  port: 8761  # Eureka 서버 포트 설정
+  port: 8761
 
 spring:
   application:
-    name: eureka-service  # 서비스 이름 설정
+    name: eureka-service
 
 eureka:
   client:
-    register-with-eureka: false  # Eureka 서버 자체는 다른 서버에 등록할 필요 없음
-    fetch-registry: false  # 다른 서비스 레지스트리를 가져오지 않음
+    register-with-eureka: false
+    fetch-registry: false
