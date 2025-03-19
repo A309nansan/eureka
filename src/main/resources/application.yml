@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: e-commerce-service  # 서비스 이름 설정
+    name: eureka-service  # 서비스 이름 설정
 
 eureka:
   client:
