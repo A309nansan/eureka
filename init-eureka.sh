@@ -30,6 +30,10 @@ fi
 log "build gradle"
 ./gradlew clean build
 
+# 실행중인 Eureka Container 삭제
+log "eureka container remove."
+docker rm -f eureka
+
 # 기존 eureka 이미지를 삭제하고 새로 빌드
 log "eureka image remove and build."
 docker rmi eureka:latest || true
