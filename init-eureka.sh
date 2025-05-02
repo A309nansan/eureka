@@ -43,6 +43,7 @@ docker build -t eureka:latest .
 log "Execute eureka..."
 docker run -d \
   --name eureka \
+  -p 13000:8761 \
   --restart unless-stopped \
   --network nansan-network \
   eureka:latest
